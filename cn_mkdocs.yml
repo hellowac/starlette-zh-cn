@@ -1,0 +1,65 @@
+site_name: Starlette-zh-cn
+site_description: 闪闪发光的小型 ASGI 库。
+site_url: https://hellowac.github.io/starlette-zh-cn/
+
+docs_dir: "cn_docs"
+
+theme:
+  name: "material"
+  custom_dir: docs/overrides
+  palette:
+    - scheme: "default"
+      media: "(prefers-color-scheme: light)"
+      toggle:
+        icon: "material/lightbulb"
+        name: "Switch to dark mode"
+    - scheme: "slate"
+      media: "(prefers-color-scheme: dark)"
+      primary: "blue"
+      toggle:
+        icon: "material/lightbulb-outline"
+        name: "Switch to light mode"
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - content.code.copy
+    - toc.follow
+
+repo_name: hellowac/starlette-zh-cn
+repo_url: https://github.com/hellowac/starlette-zh-cn
+edit_uri: edit/sync-docs/docs/
+
+nav:
+  - 简介: "index.md"
+  - 功能:
+      - 应用: "applications.md"
+      - 请求: "requests.md"
+      - 响应: "responses.md"
+      - WebSockets: "websockets.md"
+      - 路由: "routing.md"
+      - 端点: "endpoints.md"
+      - 中间件: "middleware.md"
+      - 静态文件: "staticfiles.md"
+      - 模板: "templates.md"
+      - 数据库: "database.md"
+      - GraphQL: "graphql.md"
+      - 认证: "authentication.md"
+      - API Schemas: "schemas.md"
+      - 生命周期: "lifespan.md"
+      - 后台任务: "background.md"
+      - 服务推送: "server-push.md"
+      - 异常: "exceptions.md"
+      - 配置: "config.md"
+      - 测试: "testclient.md"
+  - 发布备注: "release-notes.md"
+  - 社区:
+      - 第三方包: "third-party-packages.md"
+      - 贡献: "contributing.md"
+
+markdown_extensions:
+  - mkautodoc
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
